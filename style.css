@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+h2{
+    color: white;
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    line-height: 160%;
+    letter-spacing: -0.47px;
+}
+p{
+    color: #A1A1AA;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 160%;
+}
+body{
+    background-image: url(./assets/Fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #121214;
+}
+header{
+    margin-top: 32px;
+}
+header div{
+    width:120px;
+    margin: auto;
+    margin-bottom: 32px;
+    background: linear-gradient(to left, blue, red);
+    border-radius: 50%;
+    display: flex;
+    padding:4px;
+}
+header div img{
+    border-radius: 50%;
+    width: 100%;
+
+}
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+} 
+section{
+    background: linear-gradient(to left, blue, red);
+    border-radius: 10px;
+    padding-top: 4px;
+}
+section div{
+    padding-left: 32px;
+    padding-bottom: 32px;
+    padding-top: 24px;
+    background-color:#2A2634;
+    border-radius: 8px; 
+}
+section div ul{
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;  
+}
+.img_jogos{
+    width: 120px;
+    border-radius: 8px;
+}
+.img_canais{
+    border-radius: 50%;
+    border: 1px solid #474747;
+}
+.img_jogos:hover{
+    
+    border-radius: 8px;
+    box-shadow:
+        4px 4px 4px 4px rgb(3, 3, 3);
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-3px);
+}
+.img_canais:hover{
+    
+    border-radius: 8px;
+    box-shadow:
+        4px 4px 4px 4px rgb(3, 3, 3);
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-3px);
+    border-radius: 50%;
+}
+/* Configuração para dispositivos menores */
+
+@media screen and (max-width: 450px) {
+    header div{
+        width:90px;
+        margin: auto;
+        margin-bottom: 32px;
+        background: linear-gradient(to left, blue, red);
+        border-radius: 50%;
+        display: flex;
+        padding:4px;
+    }
+    header div img{
+        border-radius: 50%;
+        width: 100%;
+    
+    }
+    .img_jogos{
+        width: 80px;
+    }
+    .img_canais{
+        width: 60px ;
+    }
+}
